@@ -3,7 +3,7 @@ import { useCounter } from '../../hooks/useCounter'
 
 export const CounterWithCustomJook = ({counter2}) => {
 
-    console.log(counter2);
+    //console.log(counter2);
 
     const {stateCounter, accion, reset} = useCounter(counter2)
 

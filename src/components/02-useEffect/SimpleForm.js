@@ -14,17 +14,17 @@ export const SimpleForm = () => {
     const {name, email} = stateForm;
 
     useEffect(() => {
-        console.log(name)
-        console.log('name')
+        //console.log(name)
+        //console.log('name')
     }, [name] );
 
     useEffect(() => {
-        console.log('email')
-        console.log(email)
+        //console.log('email')
+        //console.log(email)
     }, [email] );
 
     const handledInputChange = ({target}) => {
-        console.log(target.value)
+        //console.log(target.value)
         setsForm(
             {
                 ...stateForm, [target.name]: target.value

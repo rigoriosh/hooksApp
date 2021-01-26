@@ -6,19 +6,19 @@ export const Message = () => {
 
     const {x, y} = Coords;
 
-    console.log('Hi Message')
+    //console.log('Hi Message')
 
     useEffect(() => {
-        console.log('componente montado');
+        //console.log('componente montado');
         const mouseMove = (e) => {            
             const coord = {x: e.x, y: e.y};            
-            console.log(coord)
+            //console.log(coord)
             setCoords(coord)
         }
          window.addEventListener('mousemove', mouseMove)
         
         return () => {
-            console.log('componentes desmontado');
+            //console.log('componentes desmontado');
             window.removeEventListener('mousemove', capturaMouse.mouseMove)
         }
     }, [])
